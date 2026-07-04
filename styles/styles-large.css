@@ -4,11 +4,27 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    nav {
+        display: block;
+    }
+
     nav ul {
         flex-direction: row;
     }
 
     nav ul li {
         padding: 15px 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    .close-btn {
+        display: none;
+    }
+
+    .site-header {
+
+        justify-content: left;
+
     }
 }

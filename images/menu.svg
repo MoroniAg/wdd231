@@ -2,7 +2,7 @@
   <defs>
     <!-- Icon Color -->
     <style>
-      .hamburger-line { stroke: #ffffff; stroke-width: 4; stroke-linecap: round; }
+      .hamburger-line { stroke: #000000; stroke-width: 4; stroke-linecap: round; }
     </style>
   </defs>
 

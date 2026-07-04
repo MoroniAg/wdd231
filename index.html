@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-large.css">
 
-    <script src="scripts/date.js"></script>
-    <script src="scripts/course.js"></script>
-    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
     <header role="banner">
         <div class="site-header">
-            <h1>Moroni Aguilera</h1>
-            <img src="images/close.svg" alt="Close" width="24" height="24" class="close-btn">
+            <img src="images/logo.svg" alt="logo" width="64" height="64">
+            <span>Moroni Aguilera</span>
+            <img id="menu-btn" src="images/menu.svg" alt="Menu" width="24" height="24" class="close-btn">
         </div>
     </header>
 
@@ -38,26 +39,21 @@
             <div class="content-grid">
                 <section id="about" aria-labelledby="about-heading">
                     <h2 id="about-heading">About Me</h2>
-                    <p>Welcome to our course home page. This section provides an overview of what you will learn and why this subject matters in today's world.</p>
+                    <p>Software developer focused on designing and building robust, scalable, and business-oriented
+                        solutions.
+                        My experience includes working on enterprise systems such as ERP platforms and Master Data
+                        Management (MDM) solutions, ensuring data integrity, consistency, and reliability across
+                        critical environments.</p>
                 </section>
 
                 <section id="student-photo" aria-labelledby="photo-heading">
                     <h2 id="photo-heading">Student Photo</h2>
                     <div class="photo-container">
-                        <img src="images/student-photo.jpg" alt="Student Photo" width="300" height="300">
+                        <img src="images/profile.jpg" alt="Student Photo" width="300" height="300">
                     </div>
                 </section>
             </div>
 
-            <section id="chamber" aria-labelledby="room-heading">
-                <h2 id="room-heading">The Chamber Discussion Area</h2>
-                <p>Dive into our interactive chamber where students can collaborate, share insights, and engage with peers through structured discussions.</p>
-            </section>
-
-            <section id="finals" aria-labelledby="exam-heading">
-                <h2 id="exam-heading">Final Exam Preparation</h2>
-                <p>This section outlines the final exam schedule, study resources, and tips to help you prepare effectively for your assessment.</p>
-            </section>
         </section>
 
         <section id="courses" aria-labelledby="courses-heading">
@@ -68,15 +64,7 @@
                 <button class="filter-btn">WDD</button>
             </div>
             <div class="course-list">
-                <div class="course-item">
-                    <h3>WDD 130</h3>
-                </div>
-                <div class="course-item">
-                    <h3>WDD 131</h3>
-                </div>
-                <div class="course-item">
-                    <h3>WDD 231</h3>
-                </div>
+
             </div>
             <p class="credits-info">The total credits for course listed above is 6</p>
         </section>
@@ -84,22 +72,23 @@
 
     <footer role="contentinfo" aria-label="Footer information">
         <div class="social-links">
-            <a href="https://github.com/MoroniAguilera" target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+            <a href="https://github.com/moroniag" target="_blank" rel="noopener noreferrer"
+                title="GitHub Repository">
                 <img src="images/github.svg" alt="GitHub" width="24" height="24">
             </a>
-            <a href="https://www.linkedin.com/in/moroni-aguilera" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/moroni-aguilera" target="_blank" rel="noopener noreferrer"
+                title="LinkedIn Profile">
                 <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24">
             </a>
-            <a href="https://twitter.com/MoroniAguilera" target="_blank" rel="noopener noreferrer" title="Twitter/X Profile">
-                <img src="images/twitter.svg" alt="Twitter" width="24" height="24">
-            </a>
+           
         </div>
 
         <div class="footer-info">
-            <span>&copy; <span id="currentyear"></span><br />
-                Moroni Aguilera<br />
-                Ecuador
-            </span>
+            <p>
+                &copy; <span id="currentyear"></span>
+                Moroni Aguilera — Ambato, Ecuador
+            </p>
+            <p id="lastModified"></p>
         </div>
     </footer>
 
