@@ -1,0 +1,14 @@
+/* Large Screen Styles */
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        padding: 15px 10px;
+    }
+}
