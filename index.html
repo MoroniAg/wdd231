@@ -11,9 +11,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="styles/styles-large.css" media="(min-width: 38rem)">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -53,7 +59,7 @@
                 <section id="student-photo" aria-labelledby="photo-heading">
                     <h2 id="photo-heading">Student Photo</h2>
                     <div class="photo-container">
-                        <img src="images/profile.jpg" alt="Student Photo" width="300" height="300">
+                        <img src="images/profile.jpg" alt="Student Photo" width="300" height="300" fetchpriority="high">
                     </div>
                 </section>
             </div>
