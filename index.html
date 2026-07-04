@@ -7,31 +7,67 @@
     <meta name="description"
         content="This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of your course home page.">
     <meta name="author" content="Moroni Aguilera">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
     <script src="scripts/date.js"></script>
+    <script src="scripts/course.js"></script>
+    <script src="scripts/navigation.js"></script>
 </head>
 
 <body>
     <header role="banner">
-        <h1>Welcome to Our Website</h1>
+        <img src="images/logo.svg" alt="logo" width="64" height="64">
+        <span>Moroni Aguilera</span>
+        <img src="images/menu.svg" alt="menu" width="64" height="64">
     </header>
 
     <nav aria-label="Main navigation" role="navigation">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
 
     <main role="main">
-        <!-- Content goes here -->
+        <h1>HOME</h1>
+        <section id="about" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Introduction to the Course</h2>
+            <p>Welcome to our course home page. This section provides an overview of what you will learn and why this
+                subject matters in today's world.</p>
+        </section>
+
+        <section id="chamber" aria-labelledby="room-heading">
+            <h2 id="room-heading">The Chamber Discussion Area</h2>
+            <p>Dive into our interactive chamber where students can collaborate, share insights, and engage with peers
+                through structured discussions.</p>
+        </section>
+
+        <section id="finals" aria-labelledby="exam-heading">
+            <h2 id="exam-heading">Final Exam Preparation</h2>
+            <p>This section outlines the final exam schedule, study resources, and tips to help you prepare effectively
+                for your assessment.</p>
     </main>
 
     <footer role="contentinfo" aria-label="Footer information">
-        &copy; 2026 Moroni Aguilera. All rights reserved.
+        <div class="social-links">
+            <a href="https://github.com/MoroniAguilera" target="_blank" rel="noopener noreferrer"
+                title="GitHub Repository"></a>
+            <a href="https://www.linkedin.com/in/moroni-aguilera" target="_blank" rel="noopener noreferrer"
+                title="LinkedIn Profile"></a>
+            <a href="https://twitter.com/MoroniAguilera" target="_blank" rel="noopener noreferrer"
+                title="Twitter/X Profile"></a>
+        </div>
+
+        <div class="footer-info">
+            <span>&copy; &nbsp;<span id="currentyear"></span><br />
+                Moroni Aguilera<br />
+                Ecuador
+            </span>
+        </div>
+
     </footer>
 
 </body>

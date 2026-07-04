@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Icon Color -->
+    <style>
+      .hamburger-line { stroke: #ffffff; stroke-width: 4; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Three Lines (Hamburger) -->
+  <line x1="30" y1="25" x2="70" y2="25" class="hamburger-line"/>
+  <line x1="30" y1="48.33" x2="70" y2="48.33" class="hamburger-line"/>
+  <line x1="30" y1="71.67" x2="70" y2="71.67" class="hamburger-line"/>
+
+</svg>
