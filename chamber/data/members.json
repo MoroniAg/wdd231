@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Ambato Coffee Roasters",
+      "address": "12 Calle Bolívar, Ambato, Ecuador",
+      "phone": "+593 99 555 0101",
+      "website": "https://ambatocoffee.example.com",
+      "image": "images/members/ambato-coffee.svg",
+      "membership": 3,
+      "description": "Artisan coffee roaster sourcing beans from across Ecuador's highlands."
+    },
+    {
+      "id": 2,
+      "name": "Andes Travel Co.",
+      "address": "45 Av. Cevallos, Ambato, Ecuador",
+      "phone": "+593 99 555 0102",
+      "website": "https://andestravel.example.com",
+      "image": "images/members/andes-travel.svg",
+      "membership": 2,
+      "description": "Boutique tour operator offering curated mountain and cultural experiences."
+    },
+    {
+      "id": 3,
+      "name": "Casona Real Hotel",
+      "address": "78 Calle Sucre, Ambato, Ecuador",
+      "phone": "+593 99 555 0103",
+      "website": "https://casonareal.example.com",
+      "image": "images/members/casona-real.svg",
+      "membership": 3,
+      "description": "Boutique hotel in a restored colonial mansion, walking distance to downtown."
+    },
+    {
+      "id": 4,
+      "name": "Tungurahua Bakery",
+      "address": "9 Calle Mera, Ambato, Ecuador",
+      "phone": "+593 99 555 0104",
+      "website": "https://tungurahuabakery.example.com",
+      "image": "images/members/tungurahua-bakery.svg",
+      "membership": 1,
+      "description": "Family bakery famous for rosquetes and traditional Ambateño pastries."
+    },
+    {
+      "id": 5,
+      "name": "Cumbre Studio",
+      "address": "22 Av. Los Shyris, Ambato, Ecuador",
+      "phone": "+593 99 555 0105",
+      "website": "https://cumbrestudio.example.com",
+      "image": "images/members/cumbre-studio.svg",
+      "membership": 2,
+      "description": "Independent design studio specializing in branding and packaging."
+    },
+    {
+      "id": 6,
+      "name": "Frutas del Valle",
+      "address": "3 Mercado Central, Ambato, Ecuador",
+      "phone": "+593 99 555 0106",
+      "website": "https://frutasdelvalle.example.com",
+      "image": "images/members/frutas-del-valle.svg",
+      "membership": 1,
+      "description": "Local produce market specializing in fruits grown in the Ambato valley."
+    },
+    {
+      "id": 7,
+      "name": "Ambato Tech Hub",
+      "address": "100 Edif. Cámara, Ambato, Ecuador",
+      "phone": "+593 99 555 0107",
+      "website": "https://ambatotech.example.com",
+      "image": "images/members/ambato-tech.svg",
+      "membership": 3,
+      "description": "Coworking and innovation space supporting local startups and developers."
+    },
+    {
+      "id": 8,
+      "name": "Manuela Boutique",
+      "address": "15 Calle Castillo, Ambato, Ecuador",
+      "phone": "+593 99 555 0108",
+      "website": "https://manuelaboutique.example.com",
+      "image": "images/members/manuela-boutique.svg",
+      "membership": 2,
+      "description": "Locally designed fashion and accessories made by Ambateño artisans."
+    }
+  ]
+}

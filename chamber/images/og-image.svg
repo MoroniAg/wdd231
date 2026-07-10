@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Ambato Chamber of Commerce social share image">
+  <title>Ambato Chamber of Commerce</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4d4a"/>
+      <stop offset="100%" stop-color="#163836"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a23a"/>
+      <stop offset="100%" stop-color="#a87c1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative emblem -->
+  <circle cx="200" cy="315" r="120" fill="url(#gold)"/>
+  <text x="200" y="345" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="140" font-weight="700" fill="#1f4d4a">A</text>
+
+  <!-- Wordmark -->
+  <text x="400" y="270" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#ffffff">Ambato</text>
+  <text x="400" y="350" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="url(#gold)">Chamber of Commerce</text>
+  <text x="400" y="410" font-family="'Open Sans', Arial, sans-serif" font-size="28" fill="#f3efe7">Connecting our community with trusted local businesses</text>
+
+  <!-- Accent bar -->
+  <rect x="400" y="440" width="120" height="6" fill="#d4a23a"/>
+</svg>

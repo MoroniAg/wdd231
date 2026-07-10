@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100" role="img" aria-label="Casona Real Hotel">
+  <rect width="140" height="100" rx="8" fill="#f3efe7"/>
+  <rect x="25" y="30" width="90" height="55" fill="#1f4d4a"/>
+  <polygon points="20,30 70,10 120,30" fill="#d4a23a"/>
+  <rect x="38" y="48" width="10" height="14" fill="#d4a23a"/>
+  <rect x="55" y="48" width="10" height="14" fill="#d4a23a"/>
+  <rect x="72" y="48" width="10" height="14" fill="#d4a23a"/>
+  <rect x="89" y="48" width="10" height="14" fill="#d4a23a"/>
+  <rect x="64" y="68" width="12" height="17" fill="#d4a23a"/>
+  <text x="70" y="95" text-anchor="middle" font-family="Georgia, serif" font-size="9"
+        font-weight="700" fill="#1f4d4a" letter-spacing="1">CASONA REAL</text>
+</svg>

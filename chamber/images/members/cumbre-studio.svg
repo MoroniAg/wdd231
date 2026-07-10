@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100" role="img" aria-label="Cumbre Studio">
+  <rect width="140" height="100" rx="8" fill="#1c1c1c"/>
+  <circle cx="55" cy="50" r="22" fill="#d4a23a"/>
+  <path d="M55 28 a22 22 0 0 1 0 44 z" fill="#1f4d4a"/>
+  <text x="100" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="20"
+        font-weight="700" fill="#f3efe7">C</text>
+  <text x="100" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="7"
+        fill="#d4a23a" letter-spacing="1">STUDIO</text>
+</svg>
