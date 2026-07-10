@@ -10,6 +10,7 @@ body {
     color: #333;
     line-height: 1.5;
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
 /* ===== Header ===== */
@@ -23,16 +24,48 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.site-header h1 {
-    margin: 0;
-    font-size: 1.3rem;
-    font-weight: bold;
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     color: #222;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.close-btn {
+.site-brand img {
+    width: 48px;
+    height: 48px;
+}
+
+.menu-btn {
+    background: transparent;
+    border: 0;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.menu-btn span {
     display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #222;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-btn.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 /* ===== Navigation ===== */
@@ -66,7 +99,8 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: #444;
     text-decoration: underline;
 }
@@ -80,6 +114,10 @@ main h1 {
     font-size: 1.8rem;
     margin: 10px 0 15px;
     color: #222;
+}
+
+section[id] {
+    scroll-margin-top: 5rem;
 }
 
 /* ===== Content Grid (single column on mobile) ===== */
@@ -174,15 +212,33 @@ main h1 {
 }
 
 .course-item {
-    padding: 10px;
+    padding: 10px 12px;
     background-color: #cfcfcf;
     border: 1px solid #aaa;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
     font-weight: 500;
 }
 
 .course-item:not(:last-child) {
     border-bottom: none;
+}
+
+.course-item.completed {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+    color: #1b5e20;
+    font-weight: 700;
+}
+
+.course-status {
+    font-size: 0.8rem;
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
 }
 
 .credits-info {

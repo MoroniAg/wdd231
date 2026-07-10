@@ -18,13 +18,11 @@
 }
 
 @media (min-width: 900px) {
-    .close-btn {
+    .menu-btn {
         display: none;
     }
 
     .site-header {
-
         justify-content: left;
-
     }
 }

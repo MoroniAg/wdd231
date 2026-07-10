@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Site Name</title>
+    <title>Moroni Aguilera | WDD231 Home</title>
     <meta name="description"
         content="This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of your course home page.">
     <meta name="author" content="Moroni Aguilera">
@@ -29,17 +29,23 @@
 <body>
     <header role="banner">
         <div class="site-header">
-            <img src="images/logo.svg" alt="logo" width="64" height="64">
-            <span>Moroni Aguilera</span>
-            <img id="menu-btn" src="images/menu.svg" alt="Menu" width="24" height="24" class="close-btn">
+            <a href="#home" class="site-brand">
+                <img src="images/logo.svg" alt="logo" width="64" height="64">
+                <span>Moroni Aguilera</span>
+            </a>
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <nav aria-label="Main navigation" role="navigation">
+    <nav id="primary-nav" aria-label="Main navigation" role="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
+            <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
         </ul>
     </nav>
 
