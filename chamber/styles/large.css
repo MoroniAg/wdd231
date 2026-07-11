@@ -1,12 +1,10 @@
 @media (min-width: 38rem) {
-    main {
-        min-height: 100rem;
+    .menu-btn {
+        display: none;
     }
-
 
     nav {
         display: block;
-        background-color: var(--color-primary-dark);
     }
 
     nav ul {
@@ -28,7 +26,6 @@
         border-bottom-color: var(--color-accent);
     }
 
-
     .hero {
         padding: 40px 32px;
     }
@@ -37,41 +34,23 @@
         font-size: 2.2rem;
     }
 
-
     .members-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 64rem) {
-    main {
-        min-height: 80rem;
+    .hero h1 {
+        font-size: 2.5rem;
     }
-
 
     .members-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
 }
 
 @media (min-width: 90rem) {
-    main {
-        min-height: 60rem;
-    }
-
-
     .members-grid {
         grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
-@media (min-width: 38rem) {
-    .menu-btn {
-        display: none;
     }
 }

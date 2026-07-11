@@ -1,25 +1,36 @@
-
-
 :root {
+    /* Brand colors — hex source of truth, all colors flow from here */
     --color-primary: #1f4d4a;
     --color-primary-dark: #163836;
-    
     --color-accent: #e7bd61;
     --color-accent-dark: #8a620f;
+    --color-silver: #c0c0c0;
+    --color-bronze: #cd7f32;
+
+    /* Surfaces & text */
     --color-surface: #ffffff;
     --color-surface-alt: #f3efe7;
+    --color-surface-overlay: rgba(255, 255, 255, 0.08);
+    --color-surface-divider: rgba(255, 255, 255, 0.15);
     --color-text: #1c1c1c;
     --color-text-muted: #5a5a5a;
+    --color-text-inverse: #ffffff;
     --color-border: #d8d3c5;
     --color-shadow: rgba(0, 0, 0, 0.08);
     --color-shadow-strong: rgba(0, 0, 0, 0.15);
 
+    /* Tokens */
     --font-body: 'Open Sans', Arial, sans-serif;
     --radius-sm: 4px;
     --radius-md: 8px;
-    --radius-lg: 12px;
+    --radius-pill: 999px;
     --transition-fast: 0.2s ease;
     --max-width: 1200px;
+}
+
+
+* {
+    min-width: 0;
 }
 
 
@@ -29,41 +40,19 @@ body {
     overflow-x: clip;
 }
 
-
-.site-header,
-.site-brand,
-.site-brand span,
-.directory-controls,
-.view-toggle,
-.members,
-.member-card,
-.member-card .member-body {
-    min-width: 0;
-}
-
-
-header,
-nav,
-main,
-footer,
-.hero,
-.directory,
-.directory-controls,
-.members,
-.member-card {
-    max-width: 100%;
-}
-
 body {
     font-family: var(--font-body);
     color: var(--color-text);
     background-color: var(--color-surface-alt);
+    line-height: 1.5;
 }
+
 
 img,
 picture,
 video,
 svg {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -76,6 +65,7 @@ p, h1, h2, h3, h4, a, span, li, address {
 
 a {
     color: var(--color-primary);
+    text-decoration: none;
     transition: color var(--transition-fast);
 }
 
@@ -103,9 +93,16 @@ button:focus-visible {
 }
 
 
+h1, h2, h3, h4 {
+    color: var(--color-primary);
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+
 .site-header {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-text-inverse);
     padding: 10px 12px;
     display: flex;
     flex-wrap: wrap;
@@ -113,21 +110,17 @@ button:focus-visible {
     align-items: center;
     gap: 8px;
     box-shadow: 0 2px 6px var(--color-shadow);
-    position: relative;
-    z-index: 10;
 }
 
 .site-brand {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #fff;
-    text-decoration: none;
+    color: var(--color-text-inverse);
     font-weight: 700;
     font-size: 0.95rem;
     line-height: 1.15;
     flex: 1 1 auto;
-    min-width: 0;
 }
 
 .site-brand:hover,
@@ -140,20 +133,12 @@ button:focus-visible {
     height: 40px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: #fff;
+    background: var(--color-surface);
     padding: 2px;
-}
-
-.site-brand span {
-    min-width: 0;
-    overflow-wrap: anywhere;
 }
 
 
 .menu-btn {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -164,7 +149,7 @@ button:focus-visible {
     display: block;
     width: 26px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--color-text-inverse);
     border-radius: 2px;
     transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
@@ -200,8 +185,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: var(--color-text-inverse);
     display: block;
     padding: 14px 18px;
     font-weight: 600;
@@ -212,7 +196,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus-visible {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: var(--color-surface-overlay);
     color: var(--color-accent);
 }
 
@@ -228,19 +212,13 @@ main {
     max-width: var(--max-width);
     margin: 0 auto;
     width: 100%;
-    
-    min-height: 200rem;
-}
-
-h1, h2, h3, h4 {
-    color: var(--color-primary);
-    line-height: 1.2;
 }
 
 
 .hero {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    color: #fff;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-inverse);
     padding: 22px 18px;
     border-radius: var(--radius-md);
     margin-bottom: 16px;
@@ -249,14 +227,14 @@ h1, h2, h3, h4 {
 }
 
 .hero h1 {
-    color: #fff;
+    color: var(--color-text-inverse);
     margin: 0 0 8px;
     font-size: 1.5rem;
 }
 
 .hero p {
     margin: 0;
-    color: #f3efe7;
+    color: var(--color-surface-alt);
     max-width: 60ch;
 }
 
@@ -273,11 +251,6 @@ h1, h2, h3, h4 {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: 0 1px 3px var(--color-shadow);
-    min-width: 0;
-}
-
-.directory-controls > * {
-    min-width: 0;
 }
 
 .view-toggle {
@@ -286,19 +259,17 @@ h1, h2, h3, h4 {
     border: 1px solid var(--color-primary);
     border-radius: var(--radius-sm);
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--color-surface);
 }
 
 .view-btn {
-    background: #fff;
+    background: var(--color-surface);
     color: var(--color-primary);
-    border: 0;
     padding: 8px 12px;
     font: inherit;
     font-weight: 600;
-    cursor: pointer;
-    transition: background-color var(--transition-fast), color var(--transition-fast);
     white-space: nowrap;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
 .view-btn + .view-btn {
@@ -312,7 +283,7 @@ h1, h2, h3, h4 {
 
 .view-btn.active {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-text-inverse);
 }
 
 .member-count {
@@ -386,31 +357,20 @@ h1, h2, h3, h4 {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 3px 8px;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background-color: var(--color-accent);
     color: var(--color-primary-dark);
     margin-bottom: 4px;
 }
 
+.member-tag.silver {
+    background-color: var(--color-silver);
+    color: var(--color-primary-dark);
+}
+
 .member-tag.gold {
     background-color: var(--color-accent);
     color: var(--color-primary-dark);
-}
-
-.member-tag.silver {
-    background-color: #c0c0c0;
-    color: var(--color-primary-dark);
-}
-
-.member-tag.bronze {
-    background-color: #cd7f32;
-    color: #fff;
-}
-
-.member-tag.np,
-.member-tag.nonprofit {
-    background-color: var(--color-primary);
-    color: #fff;
 }
 
 .member-address,
@@ -419,12 +379,10 @@ h1, h2, h3, h4 {
     margin: 0;
     font-size: 0.88rem;
     color: var(--color-text-muted);
-    word-break: break-word;
 }
 
 .member-url a {
     color: var(--color-primary);
-    text-decoration: none;
     font-weight: 600;
 }
 
@@ -434,10 +392,6 @@ h1, h2, h3, h4 {
     text-decoration: underline;
 }
 
-
-.members-list {
-    grid-template-columns: 1fr;
-}
 
 .members-list .member-card {
     display: block;
@@ -449,9 +403,7 @@ h1, h2, h3, h4 {
 
 .members-list .member-card .member-body {
     padding: 10px 12px;
-    flex-direction: column;
     justify-content: center;
-    min-width: 0;
 }
 
 .members-list .member-card h3 {
@@ -496,26 +448,8 @@ h1, h2, h3, h4 {
         font-size: 0.9rem;
     }
 
-    .members-list .member-card .member-image {
-        width: 64px;
-        padding: 6px;
-    }
-
-    .members-list .member-card .member-image img {
-        max-height: 48px;
-        max-width: 48px;
-    }
-
-    .members-list .member-card .member-body {
-        padding: 8px 10px;
-    }
-
     .member-card h3 {
         font-size: 1rem;
-    }
-
-    footer {
-        padding: 20px 10px;
     }
 
     .social-links img {
@@ -527,13 +461,11 @@ h1, h2, h3, h4 {
 
 footer {
     background-color: var(--color-primary);
-    color: #f3efe7;
-    height: 24rem;
+    color: var(--color-surface-alt);
     padding: 24px 12px;
     text-align: center;
     margin-top: 30px;
     border-top: 4px solid var(--color-accent);
-    overflow: hidden;
 }
 
 .footer-info p {
@@ -543,18 +475,17 @@ footer {
 
 .footer-info a {
     color: var(--color-accent);
-    text-decoration: none;
 }
 
 .footer-info a:hover,
 .footer-info a:focus-visible {
     text-decoration: underline;
-    color: #fff;
+    color: var(--color-text-inverse);
 }
 
 .footer-org {
     font-size: 1.05rem;
-    color: #fff;
+    color: var(--color-text-inverse);
 }
 
 .social-links {
@@ -576,17 +507,16 @@ footer {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--color-surface);
     padding: 4px;
 }
 
 .footer-meta {
     margin-top: 14px;
     padding-top: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid var(--color-surface-divider);
     font-size: 0.85rem;
-    color: #d8d3c5;
-    min-height: 4.2rem;
+    color: var(--color-border);
 }
 
 .footer-meta p {
