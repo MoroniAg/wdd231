@@ -1,41 +1,30 @@
 @media (min-width: 38rem) {
-    .menu-btn {
-        display: none;
-    }
-
-    nav {
-        display: block;
-    }
-
-    main {
-        min-height: 100rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: var(--max-width);
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    nav ul li a {
-        padding: 14px 22px;
-        border-left: 0;
-        border-bottom: 4px solid transparent;
-    }
-
-    nav ul li a.active {
-        border-left: 0;
-        border-bottom-color: var(--color-accent);
-    }
-
     .hero {
-        padding: 40px 32px;
+        padding: 80px 32px;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
+    }
+
+    .hero-ctas {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    .forecast-grid {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .spotlights-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .members-grid {
