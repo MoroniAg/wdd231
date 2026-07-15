@@ -58,18 +58,7 @@ svg {
 }
 
 
-p,
-h1,
-h2,
-h3,
-h4,
-a,
-span,
-li,
-address {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-}
+
 
 a {
     color: var(--color-primary);
@@ -106,8 +95,6 @@ h2,
 h3,
 h4 {
     color: var(--color-primary);
-    line-height: 1.2;
-    text-wrap: balance;
 }
 
 /* Hero Section */
@@ -523,10 +510,7 @@ main {
     color: var(--color-primary-dark);
 }
 
-.member-tag.gold {
-    background-color: var(--color-accent);
-    color: var(--color-primary-dark);
-}
+
 
 .member-address,
 .member-phone,
@@ -579,6 +563,7 @@ main {
     width: 25px;
     height: 3px;
     background-color: var(--color-text-inverse);
+    color: transparent;
     margin: 4px 0;
     transition: var(--transition-fast);
 }
