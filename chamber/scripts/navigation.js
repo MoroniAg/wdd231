@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!menuBtn || !nav) return;
 
+    // Update active link based on current URL
+    const currentPath = window.location.pathname;
+    const navLinks = nav.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        if (currentPath.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        } else {
+            link.classList.remove('active');
+            link.removeAttribute('aria-current');
+        }
+    });
+
     menuBtn.addEventListener('click', function () {
         const isOpen = nav.classList.toggle('open');
         menuBtn.classList.toggle('open', isOpen);

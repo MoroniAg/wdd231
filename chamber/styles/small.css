@@ -162,6 +162,14 @@ h4 {
     justify-content: center;
 }
 
+.site-header {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -338,7 +346,8 @@ h4 {
 
 nav {
     display: none;
-    background-color: var(--color-primary-dark);
+    margin-top: 0.5rem;
+    /* background-color: var(--color-primary-dark); */
 }
 
 nav.open {
@@ -556,6 +565,23 @@ main {
     font-size: 1rem;
 }
 
+
+#menu-btn {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+#menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-text-inverse);
+    margin: 4px 0;
+    transition: var(--transition-fast);
+}
 
 @media (max-width: 22.5rem) {
     .site-header {

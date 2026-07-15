@@ -45,32 +45,36 @@
                 <img src="images/logo.svg" alt="Ambato Chamber of Commerce logo" width="48" height="48">
                 <span>Ambato Chamber of Commerce</span>
             </a>
-            <button id="menu-btn" class="menu-btn" type="button" aria-label="Toggle navigation"
-                aria-expanded="false" aria-controls="primary-nav">
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            <nav id="primary-nav" aria-label="Main navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="directory.html" class="nav-link">Directory</a></li>
+                    <li><a href="join.html" class="nav-link">Join</a></li>
+                    <li><a href="discover.html" class="nav-link">Discover</a></li>
+                </ul>
+            </nav>
         </div>
+
     </header>
 
-    <nav id="primary-nav" aria-label="Main navigation" role="navigation">
-        <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="directory.html" class="nav-link active" aria-current="page">Directory</a></li>
-            <li><a href="join.html" class="nav-link">Join</a></li>
-            <li><a href="discover.html" class="nav-link">Discover</a></li>
-        </ul>
-    </nav>
+
 
     <main role="main" id="main-content">
         <section class="hero" aria-labelledby="home-heading">
             <div class="hero-image-container">
-                <img src="images/hero-home.jpg" alt="Panoramic view of Ambato city center and commerce" class="hero-image">
+                <img src="images/hero-home.jpg" alt="Panoramic view of Ambato city center and commerce"
+                    class="hero-image" fetchpriority="high">
             </div>
             <div class="hero-content">
                 <h1 id="home-heading">Welcome to the Ambato Chamber of Commerce</h1>
-                <p>Empowering local businesses, fostering economic growth, and building a stronger community together in the heart of Ambato.</p>
+                <p>Empowering local businesses, fostering economic growth, and building a stronger community together in
+                    the heart of Ambato.</p>
                 <div class="hero-ctas">
                     <a href="join.html" class="cta-button primary">Join the Chamber</a>
                     <a href="directory.html" class="cta-button secondary">Explore Directory</a>
@@ -111,22 +115,8 @@
             <div class="spotlight-column">
                 <section class="company-spotlights" aria-labelledby="spotlight-heading">
                     <h2 id="spotlight-heading">Company Spotlights</h2>
-                    <div class="spotlights-grid">
-                        <article class="spotlight-card">
-                            <img src="images/spotlight1.jpg" alt="Eco-friendly textiles shop in Ambato" class="spotlight-img">
-                            <h3>Andina Textiles</h3>
-                            <p>Leading the way in sustainable fabric production with organic materials from the highlands.</p>
-                        </article>
-                        <article class="spotlight-card">
-                            <img src="images/spotlight2.jpg" alt="Modern cafe and bakery" class="spotlight-img">
-                            <h3>Café Ambato</h3>
-                            <p>The city's favorite gathering spot, blending traditional Ecuadorian coffee with modern pastry.</p>
-                        </article>
-                        <article class="spotlight-card">
-                            <img src="images/spotlight3.jpg" alt="Tech solutions office" class="spotlight-img">
-                            <h3>Sierras Tech</h3>
-                            <p>Providing cutting-edge software solutions to optimize local agriculture logistics.</p>
-                        </article>
+                    <div class="spotlights-grid" id="company-spotlights">
+                        <!-- Dynamically populated by spotlights.js -->
                     </div>
                 </section>
             </div>
