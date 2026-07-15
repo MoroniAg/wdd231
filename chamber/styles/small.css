@@ -583,7 +583,7 @@ main {
     transition: var(--transition-fast);
 }
 
-@media (max-width: 22.5rem) {
+@media (max-width: 38rem) {
     .site-header {
         padding: 8px 10px;
     }
@@ -596,6 +596,14 @@ main {
     .site-brand img {
         width: 32px;
         height: 32px;
+    }
+
+    #primary-nav{
+        position: absolute;
+        z-index: 1000;
+        background-color: var(--color-primary-dark);
+        top: 3.5rem;
+        width: 100%;
     }
 
     main {
