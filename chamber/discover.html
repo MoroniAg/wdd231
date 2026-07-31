@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moroni Aguilera | Ambato Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Ambato Chamber of Commerce, the leading organization for business growth and community development in Ambato.">
+    <meta name="author" content="Moroni Aguilera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ambato Chamber of Commerce | Moroni Aguilera">
+    <meta property="og:description"
+        content="Welcome to the Ambato Chamber of Commerce, the leading organization for business growth and community development in Ambato.">
+    <meta property="og:image" content="https://moroniag.github.io/wdd231/chamber/images/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://moroniag.github.io/wdd231/chamber/index.html">
+    <meta property="og:site_name" content="Ambato Chamber of Commerce">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 38rem)">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
+    <script src="scripts/spotlights.js" type="module" defer></script>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="site-header">
+            <a href="index.html" class="site-brand">
+                <img src="images/logo.svg" alt="Ambato Chamber of Commerce logo" width="48" height="48">
+                <span>Ambato Chamber of Commerce</span>
+            </a>
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav" aria-label="Main navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="directory.html" class="nav-link">Directory</a></li>
+                    <li><a href="join.html" class="nav-link">Join</a></li>
+                    <li><a href="discover.html" class="nav-link">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+    <main role="main" id="main-content">
+        <div id="visit-message" class="visit-message"></div>
+        <div class="spotlights-grid"></div>
+    </main>
+
+    <footer role="contentinfo" aria-label="Footer information">
+        <div class="footer-info">
+            <p class="footer-org"><strong>Ambato Chamber of Commerce</strong></p>
+            <p>10 Rue De La Paix</p>
+            <p>Ambato, Ecuador 999</p>
+            <p><a href="mailto:info@ambatocc.org">info@ambatocc.org</a></p>
+            <p><a href="tel:+2235552300">(223) 555-2300</a></p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="images/youtube.svg" alt="YouTube" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <img src="images/twitter.svg" alt="Twitter" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48" loading="lazy">
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Moroni Aguilera</p>
+            <p>&copy; <span id="currentyear" class="footer-year">0000</span> Ambato Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified" class="footer-last-modified">Loading...</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
