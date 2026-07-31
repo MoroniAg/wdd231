@@ -31,13 +31,20 @@ function renderSpotlights() {
 
     spotlightsContainer.innerHTML = '';
 
-    spotlights.forEach(item => {
+    spotlights.forEach((item, index) => {
         const card = document.createElement('article');
         card.className = 'spotlight-card';
+        
+        // The first image in the grid is likely the LCP element.
+        // We remove lazy loading and add fetchpriority="high" for the first item.
+        const isLCP = index === 0;
+        const loadingAttr = isLCP ? '' : 'loading="lazy"';
+        const priorityAttr = isLCP ? 'fetchpriority="high"' : '';
+
         card.innerHTML = `
             <h2>${item.name}</h2>
             <figure>
-                <img src="${item.image}" alt="${item.name}" loading="lazy">
+                <img src="${item.image}" alt="${item.name}" ${loadingAttr} ${priorityAttr}>
             </figure>
             <address>${item.address}</address>
             <p>${item.description}</p>
