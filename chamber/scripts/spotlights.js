@@ -35,8 +35,6 @@ function renderSpotlights() {
         const card = document.createElement('article');
         card.className = 'spotlight-card';
         
-        // The first image in the grid is likely the LCP element.
-        // We remove lazy loading and add fetchpriority="high" for the first item.
         const isLCP = index === 0;
         const loadingAttr = isLCP ? '' : 'loading="lazy"';
         const priorityAttr = isLCP ? 'fetchpriority="high"' : '';

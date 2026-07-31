@@ -28,10 +28,16 @@
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     </noscript>
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/reset.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/small.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
-    <link rel="stylesheet" href="styles/large.css" media="(min-width: 38rem)">
+    <link rel="stylesheet" href="styles/medium.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/large.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </noscript>
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>

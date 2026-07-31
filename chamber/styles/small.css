@@ -143,6 +143,14 @@ h4 {
     display: block;
 }
 
+.spotlight-card button{
+    background-color: #163836;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
 @media (min-width: 641px) {
     .spotlight-card img:hover {
         transform: scale(1.05);
