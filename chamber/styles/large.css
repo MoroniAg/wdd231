@@ -29,7 +29,7 @@
     }
 
 @media (min-width: 38rem) {
-// ...existing code...
+
     .spotlights-grid {
         display: grid;
         gap: 20px;
