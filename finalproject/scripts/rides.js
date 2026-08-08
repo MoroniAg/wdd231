@@ -1,17 +1,6 @@
-export async function getRides() {
-    try {
-        const response = await fetch('data/rides.json');
-        if (!response.ok) {
-            throw new Error('Failed to fetch rides data');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error loading rides:', error);
-        return [];
-    }
-}
+import { rides } from '../data/rides.mjs';
 
-export function renderRides(rides) {
+export function renderRides() {
     const container = document.querySelector('#rides-container');
     if (!container) return;
 
@@ -34,6 +23,5 @@ export function renderRides(rides) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const rides = await getRides();
-    renderRides(rides);
+    renderRides();
 });

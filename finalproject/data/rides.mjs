@@ -1,4 +1,4 @@
-[
+export const rides = [
     {
         "id": 1,
         "name": "Historic Center Tour",
