@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moroni Aguilera | Membership - Pedal & Pivot Community Club</title>
+    <meta name="description"
+        content="Join the Pedal & Pivot Community Club to access guided rides, repair workshops, and a supportive cycling community in Ambato.">
+    <meta name="author" content="Moroni Aguilera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Membership | Pedal & Pivot Community Club">
+    <meta property="og:description" content="Become a member of our cycling community and start your journey with us.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://pedalpivot.org/membership.html">
+    <meta property="og:site_name" content="Pedal & Pivot Community Club">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+
+    <script type="module" src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="site-header">
+            <a href="index.html" class="site-brand">
+                <img src="images/logo.svg" alt="Pedal & Pivot logo" width="48" height="48">
+                <span>Pedal & Pivot Community Club</span>
+            </a>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu" aria-label="Main navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="rides.html">Community Rides</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Join Our Community</h2>
+            <p>Becoming a member of Pedal & Pivot is about more than just a subscription; it's about joining a movement
+                of cyclists dedicated to safety, skill, and sustainability.</p>
+        </section>
+
+        <section class="flex-container">
+            <div class="card">
+                <h3>Basic Member</h3>
+                <p>Perfect for casual riders. Access to all community rides and basic forum access.</p>
+                <p><strong>$5 / Month</strong></p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="card">
+                <h3>Enthusiast Member</h3>
+                <p>For those who love to ride and tinker. All Basic benefits plus discounted workshop fees and priority
+                    ride registration.</p>
+                <p><strong>$15 / Month</strong></p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="card">
+                <h3>Pro Member</h3>
+                <p>For the dedicated cyclist. Full access to all workshops, free toolkit rental, and membership in the
+                    ride-leadership program.</p>
+                <p><strong>$25 / Month</strong></p>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </section>
+
+        <section class="membership-application">
+            <h2 class="section-title">Membership Application</h2>
+            <p class="section-subtitle">Fill out the form below to start your journey with the Pedal & Pivot community.
+            </p>
+
+            <div class="card form-card">
+                <form id="membershipForm" action="form-action.html" method="GET">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label><br>
+                        <input type="text" id="fullName" name="fullName" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Cycling Experience:</label><br>
+                        <select id="experience" name="experience" required class="form-input">
+                            <option value="">--Please choose an option--</option>
+                            <option value="beginner">Beginner (Just starting)</option>
+                            <option value="intermediate">Intermediate (Comfortable in city)</option>
+                            <option value="advanced">Advanced (Experienced/Pro)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Primary Interest:</label><br>
+                        <div class="radio-group">
+                            <input type="radio" id="interestRides" name="interest" value="rides" checked>
+                            <label for="interestRides">Community Rides</label><br>
+                            <input type="radio" id="interestWorkshops" name="interest" value="workshops">
+                            <label for="interestWorkshops">Repair Workshops</label><br>
+                            <input type="radio" id="interestBoth" name="interest" value="both">
+                            <label for="interestBoth">Both</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" class="form-input"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" aria-label="Footer information">
+        <div class="footer-info">
+            <p class="footer-org"><strong>Pedal & Pivot Community Club</strong></p>
+            <p>Av. Amazonas y Colón</p>
+            <p>Quito, Ecuador 170150</p>
+            <p><a href="mailto:info@pedalpivot.ec" class="footer-link">info@pedalpivot.ec</a></p>
+            <p><a href="tel:+593225551234" class="footer-link">+593 2-2555-1234</a></p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="images/youtube.svg" alt="YouTube" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <img src="images/twitter.svg" alt="Twitter" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48" loading="lazy">
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Moroni Aguilera</p>
+            <p>&copy; <span id="currentyear"></span> Pedal & Pivot Community Club</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <p><a href="attributions.html" class="footer-link">Attributions</a></p>
+        </div>
+        <div class="youtube-video">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">Video
+                Presentation</a>
+        </div>
+    </footer>
+</body>
+
+</html>

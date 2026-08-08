@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="20" fill="#2c3e50"/>
+    <circle cx="50" cy="50" r="35" stroke="#27ae60" stroke-width="8" fill="none" />
+    <path d="M50 25 L50 75 M25 50 L75 50" stroke="#f39c12" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="10" fill="#f39c12"/>
+    <text x="50%" y="90%" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">P&amp;P</text>
+</svg>

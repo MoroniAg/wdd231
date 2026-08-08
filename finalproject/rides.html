@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moroni Aguilera | Community Rides - Pedal & Pivot Community Club</title>
+    <meta name="description"
+        content="Explore our weekly ride schedule, from beginner city tours to advanced Andean mountain trails in Ambato.">
+    <meta name="author" content="Moroni Aguilera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Community Rides | Pedal & Pivot Community Club">
+    <meta property="og:description"
+        content="Check out our guided ride schedules and safety tips for cycling in Ambato.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://pedalpivot.org/rides.html">
+    <meta property="og:site_name" content="Pedal & Pivot Community Club">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+
+    <script type="module" src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/rides.js" defer></script>
+    <script type="module" src="scripts/ui.js" defer></script>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="site-header">
+            <a href="index.html" class="site-brand">
+                <img src="images/logo.svg" alt="Pedal & Pivot logo" width="48" height="48">
+                <span>Pedal & Pivot Community Club</span>
+            </a>
+            <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu" aria-label="Main navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="rides.html" class="active">Community Rides</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Weekly Ride Schedule</h2>
+            <p class="section-subtitle">Join us for a ride! We offer different levels to ensure everyone feels safe and
+                welcome.</p>
+
+            <div id="rides-container" class="flex-container rides-container">
+                <!-- Dynamic rides will be loaded here -->
+            </div>
+        </section>
+
+        <section class="membership-application">
+            <h2>Ride Safety Tips</h2>
+            <div class="flex-container">
+                <div class="card">
+                    <h3>Helmet Always</h3>
+                    <p>No exceptions. Your safety is our priority. We can provide loaner helmets for new members.</p>
+                </div>
+                <div class="card">
+                    <h3>Follow the Lead</h3>
+                    <p>Our ride leaders are trained in basic first aid and city cycling laws. Stay with the pack.</p>
+                </div>
+                <div class="card">
+                    <h3>Check Your Gear</h3>
+                    <p>Ensure your tires are pumped and brakes are working before the meeting time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Dialog -->
+    <div id="ride-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-modal">&times;</button>
+            <h2 id="modal-title">Ride Details</h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle">Toggle Dark Mode</button>
+
+    <footer role="contentinfo" aria-label="Footer information">
+        <div class="footer-info">
+            <p class="footer-org"><strong>Pedal & Pivot Community Club</strong></p>
+            <p>Av. Amazonas y Colón</p>
+            <p>Quito, Ecuador 170150</p>
+            <p><a href="mailto:info@pedalpivot.ec" class="footer-link">info@pedalpivot.ec</a></p>
+            <p><a href="tel:+593225551234" class="footer-link">+593 2-2555-1234</a></p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <img src="images/youtube.svg" alt="YouTube" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <img src="images/twitter.svg" alt="Twitter" width="48" height="48" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48" loading="lazy">
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Moroni Aguilera</p>
+            <p>&copy; <span id="currentyear"></span> Pedal & Pivot Community Club</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <p><a href="attributions.html" class="footer-link">Attributions</a></p>
+        </div>
+        <div class="youtube-video">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">Video
+                Presentation</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

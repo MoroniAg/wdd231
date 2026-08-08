@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Historic Center Tour",
+        "level": "Beginner",
+        "distance": "5 km",
+        "duration": "2 hours",
+        "meetingPoint": "Juan Montalvo Park",
+        "description": "A gentle introduction to Ambato's colonial architecture and safe urban cycling paths."
+    },
+    {
+        "id": 2,
+        "name": "Ambato River Route",
+        "level": "Intermediate",
+        "distance": "15 km",
+        "duration": "3 hours",
+        "meetingPoint": "Linear Park Entrance",
+        "description": "A scenic ride along the river valley with some challenging climbs to test your stamina."
+    },
+    {
+        "id": 3,
+        "name": "Andes High Trail",
+        "level": "Advanced",
+        "distance": "30 km",
+        "duration": "5 hours",
+        "meetingPoint": "Tungurahua Volcano Base",
+        "description": "A rugged excursion through the high Andean foothills with technical terrain and high altitude."
+    },
+    {
+        "id": 4,
+        "name": "Sunday Sun Glide",
+        "level": "Beginner",
+        "distance": "8 km",
+        "duration": "2 hours",
+        "meetingPoint": "Central Plaza",
+        "description": "A relaxed morning ride to enjoy the local markets and quiet city streets."
+    },
+    {
+        "id": 5,
+        "name": "Ambato Express",
+        "level": "Intermediate",
+        "distance": "12 km",
+        "duration": "2 hours",
+        "meetingPoint": "Bus Terminal",
+        "description": "A fast-paced tour of Ambato's commercial heart and hidden architectural gems."
+    },
+    {
+        "id": 6,
+        "name": "Protector Forest Loop",
+        "level": "Intermediate",
+        "distance": "18 km",
+        "duration": "4 hours",
+        "meetingPoint": "Protector Forest Entrance",
+        "description": "Immersive nature ride through the native forests and eucalyptus groves of Tungurahua."
+    },
+    {
+        "id": 7,
+        "name": "Family Stroll",
+        "level": "Beginner",
+        "distance": "6 km",
+        "duration": "2 hours",
+        "meetingPoint": "Children's Park",
+        "description": "A flat, safe ride designed for families and new cyclists to enjoy the city."
+    },
+    {
+        "id": 8,
+        "name": "Volcano Challenge",
+        "level": "Advanced",
+        "distance": "40 km",
+        "duration": "7 hours",
+        "meetingPoint": "Ambato High Sectors",
+        "description": "The ultimate climb to the high peaks surrounding the city. Not for the faint of heart."
+    },
+    {
+        "id": 9,
+        "name": "Lagoon Circular",
+        "level": "Beginner",
+        "distance": "12 km",
+        "duration": "3 hours",
+        "meetingPoint": "Lagoon Lookout",
+        "description": "A peaceful loop around the local lagoons with plenty of scenic views of the valley."
+    },
+    {
+        "id": 10,
+        "name": "Ambato Lights Ride",
+        "level": "Intermediate",
+        "distance": "10 km",
+        "duration": "2 hours",
+        "meetingPoint": "Municipal City Hall",
+        "description": "Experience the city lights at night. High-visibility gear and helmets required."
+    },
+    {
+        "id": 11,
+        "name": "Heritage Path",
+        "level": "Beginner",
+        "distance": "6 km",
+        "duration": "2 hours",
+        "meetingPoint": "City Museum",
+        "description": "A historical tour visiting Ambato's most important cultural landmarks."
+    },
+    {
+        "id": 12,
+        "name": "Devil's Canyon",
+        "level": "Advanced",
+        "distance": "22 km",
+        "duration": "5 hours",
+        "meetingPoint": "Canyon Entrance",
+        "description": "Technical descent and steep climbs through the dramatic canyon landscape."
+    },
+    {
+        "id": 13,
+        "name": "University Route",
+        "level": "Beginner",
+        "distance": "5 km",
+        "duration": "1 hour",
+        "meetingPoint": "UTA Campus",
+        "description": "A short ride demonstrating the safest routes for students and faculty."
+    },
+    {
+        "id": 14,
+        "name": "Ambato Bridges",
+        "level": "Intermediate",
+        "distance": "14 km",
+        "duration": "3 hours",
+        "meetingPoint": "River Bridge",
+        "description": "Crossing the city's major bridges for a panoramic view of the urban skyline."
+    },
+    {
+        "id": 15,
+        "name": "Flower Trail",
+        "level": "Beginner",
+        "distance": "9 km",
+        "duration": "2 hours",
+        "meetingPoint": "Flower Market",
+        "description": "A seasonal ride through the flower-growing regions on the outskirts of Ambato."
+    }
+]

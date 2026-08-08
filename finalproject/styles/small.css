@@ -1,0 +1,88 @@
+/* Mobile First Styles */
+
+@media (max-width: 1023px) {
+
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: var(--white);
+        transition: all 0.3s linear;
+        border-radius: 2px;
+    }
+
+    nav#nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        /* Approx header height */
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+        z-index: 9;
+    }
+
+    nav#nav-menu.open {
+        display: flex;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    nav a.active {
+        color: var(--accent-color);
+    }
+
+    /* main {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    min-height: 1600px;
+} */
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
