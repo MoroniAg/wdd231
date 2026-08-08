@@ -83,8 +83,13 @@ header {
     gap: 10px;
 }
 
+.rides-container {
+    min-height: 2500px;
+}
+
 .membership-application {
     margin-top: 3rem;
+    min-height: 530px;
 }
 
 .ride-description {
@@ -139,7 +144,7 @@ footer a {
 .btn {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--primary-color);
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
@@ -249,11 +254,12 @@ body.dark-mode .hero {
     background-color: #243647;
 }
 
-.youtube-video{
+.youtube-video {
     text-align: center;
     margin-top: 2rem;
 }
-.youtube-video a{
+
+.youtube-video a {
     background-color: var(--bg-color);
     color: var(--heading-color);
     margin-top: 1rem;
