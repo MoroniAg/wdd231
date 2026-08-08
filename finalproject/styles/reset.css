@@ -9,6 +9,7 @@
     /* Light Grey */
     --text-color: #333333;
     --white: #ffffff;
+    --heading-color: #2c3e50;
 
     --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --body-font: 'Tahoma', 'Verdana', sans-serif;
@@ -25,6 +26,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 h1,
@@ -34,7 +36,7 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--heading-color);
     margin-bottom: 1rem;
 }
 
@@ -58,10 +60,12 @@ header {
     color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
+    min-width: 0;
 }
 
 .site-brand img {
     margin-right: 10px;
+    flex: 0 0 auto;
 }
 
 .hero {
@@ -79,13 +83,8 @@ header {
     gap: 10px;
 }
 
-.rides-container{
-    min-height: 2500px;
-}
-
 .membership-application {
     margin-top: 3rem;
-    min-height: 530px;
 }
 
 .ride-description {
@@ -133,6 +132,10 @@ footer {
     margin-top: 3rem;
 }
 
+footer a {
+    color: var(--white);
+}
+
 .btn {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -147,7 +150,7 @@ footer {
 }
 
 .btn:hover {
-    background-color: #219150;
+    background-color: #115a2c;
 }
 
 .btn-accent {
@@ -155,7 +158,16 @@ footer {
 }
 
 .btn-accent:hover {
-    background-color: #e67e22;
+    background-color: #7d4700;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
 }
 
 .card {
@@ -174,7 +186,7 @@ main {
 
 /* Modal Styles */
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -183,6 +195,10 @@ main {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
+}
+
+.modal[hidden] {
+    display: none;
 }
 
 .modal-content {
@@ -204,7 +220,7 @@ main {
     cursor: pointer;
     border: none;
     background: none;
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 .theme-toggle {
@@ -225,7 +241,12 @@ body.dark-mode {
     --bg-color: #1a1a1a;
     --text-color: #e0e0e0;
     --white: #2d2d2d;
-    --primary-color: #34495e;
+    --primary-color: #1f2d3d;
+    --heading-color: #f4f7f6;
+}
+
+body.dark-mode .hero {
+    background-color: #243647;
 }
 
 .youtube-video{
@@ -234,7 +255,7 @@ body.dark-mode {
 }
 .youtube-video a{
     background-color: var(--bg-color);
-    color: var(--primary-color);
+    color: var(--heading-color);
     margin-top: 1rem;
     padding: 1rem 2rem;
     border-radius: 0.5rem;

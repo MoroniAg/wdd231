@@ -56,7 +56,7 @@
 
     <main>
         <section>
-            <h2 class="section-title">Weekly Ride Schedule</h2>
+            <h1 class="section-title">Weekly Ride Schedule</h1>
             <p class="section-subtitle">Join us for a ride! We offer different levels to ensure everyone feels safe and
                 welcome.</p>
 
@@ -85,9 +85,10 @@
     </main>
 
     <!-- Modal Dialog -->
-    <div id="ride-modal" class="modal">
+    <div id="ride-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+        aria-describedby="modal-desc" hidden>
         <div class="modal-content">
-            <button id="close-modal" class="close-modal">&times;</button>
+            <button id="close-modal" class="close-modal" type="button" aria-label="Close ride details">&times;</button>
             <h2 id="modal-title">Ride Details</h2>
             <p id="modal-desc"></p>
         </div>

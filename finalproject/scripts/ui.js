@@ -1,25 +1,33 @@
 export function initModal() {
     const modal = document.querySelector('#ride-modal');
     const closeBtn = document.querySelector('#close-modal');
-    const modalTitle = document.querySelector('#modal-title');
-    const modalDesc = document.querySelector('#modal-desc');
+    let trigger = null;
 
     if (!modal) return;
 
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+    const closeModal = () => {
+        modal.hidden = true;
+        trigger?.focus();
+    };
+
+    closeBtn.addEventListener('click', closeModal);
 
     window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = 'none';
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modal.hidden) {
+            closeModal();
         }
     });
 
     document.addEventListener('click', (e) => {
         if (e.target.classList.contains('btn-accent') && e.target.dataset.id) {
-            const rideId = e.target.dataset.id;
-            openRideModal(rideId);
+            trigger = e.target;
+            openRideModal(e.target.dataset.id);
         }
     });
 }
@@ -37,7 +45,8 @@ async function openRideModal(id) {
         if (ride) {
             modalTitle.textContent = ride.name;
             modalDesc.textContent = `${ride.description} This ride is ${ride.distance} long and typically takes ${ride.duration}. Meet at ${ride.meetingPoint}.`;
-            modal.style.display = 'block';
+            modal.hidden = false;
+            document.querySelector('#close-modal').focus();
         }
     } catch (err) {
         console.error('Error opening modal:', err);
@@ -62,3 +71,8 @@ export function initTheme() {
         });
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    initModal();
+    initTheme();
+});
